@@ -1,9 +1,6 @@
 language: cpp
 sudo: required
-install:
-  - sudo add-apt-repository -y ppa:kalakris/cmake
-  - sudo apt-get update -qq
-  - sudo apt-get install cmake
+dist: trusty
 script: cmake -DTEST=1 && make
 compiler:
   - clang
